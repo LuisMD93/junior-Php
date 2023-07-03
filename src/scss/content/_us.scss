@@ -1,0 +1,17 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as m;
+
+
+.us-container{
+
+    @include m.tablet{
+        @include m.grid(2,2rem);
+    }
+}
+
+.us-text blockquote{
+    font-weight: var.$negro;
+    font-size:2.2rem;
+    margin: 3rem 0 0 0;
+    padding-left: 1rem 0 3rem;
+}

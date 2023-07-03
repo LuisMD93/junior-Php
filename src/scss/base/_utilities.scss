@@ -1,0 +1,16 @@
+@use'variables' as v;
+
+
+.seccion {
+    margin-top: calc(v.$separacion / 2);
+    margin-bottom: calc(v.$separacion / 2);
+}
+.center-container {
+    max-width: 80rem;
+}
+
+.align-right{
+
+    display: flex;
+    justify-content: flex-end;
+}

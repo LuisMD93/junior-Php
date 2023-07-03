@@ -1,0 +1,54 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+@include m.tablet{
+    .advertisements-container{
+        @include m.grid(3,2rem);
+    }
+}
+
+
+.advertisement{
+    background-color:#f5f5f5;
+    border: 1px solid #ebebeb;
+    margin-bottom: 3rem;
+
+    .advertisement-content{
+        padding: 2rem;   
+    }
+
+    h3,p{
+        margin: 0;
+    }
+
+ 
+}
+
+.price{
+    color: v.$verde;
+    font-weight: v.$bold;
+    font-size: 3rem;
+}
+
+.characteristics-icons{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    max-width: 40rem;
+
+    li{
+        flex:1;
+        display: flex;
+
+        img{
+            flex: 0 0 5rem;
+            margin-right: 1rem;
+        }
+
+        p{
+            font-weight: v.$black ;
+        }
+    }
+}
+
+
